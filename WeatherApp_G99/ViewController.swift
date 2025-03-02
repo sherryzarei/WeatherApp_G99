@@ -107,7 +107,7 @@ class ViewController: UIViewController {
     }
     
     @objc func handleShowForecast() {
-        print("Show Forecast button tapped")
+        self.navigationController?.pushViewController(ForecastViewController(), animated: true)
     }
     
     @objc func handleRefresh() {
